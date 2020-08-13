@@ -37,6 +37,19 @@ public class Main {
         strings.add("AAAA");
         strings.sort(stringComparator);
         System.out.println(strings);
+
+        ArrayList<String> stringArrayList = new ArrayList<>(3);
+        stringArrayList.add("White");
+        stringArrayList.add("Blue");
+        stringArrayList.add("Brown");
+        stringArrayList.ensureCapacity(6);
+        stringArrayList.add("Yellow");
+        stringArrayList.add("Gray");
+        Collections.sort(stringArrayList);
+        Collections.reverse(stringArrayList);
+        System.out.println(stringArrayList);
+        Collections.shuffle(stringArrayList);
+        System.out.println(stringArrayList);
     }
 
     public static void addString(ArrayList<String> strings,String hint){
